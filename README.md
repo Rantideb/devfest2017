@@ -1,6 +1,5 @@
 # Web Audio Piano For DevFest Dhaka 2017
 
-*****
 
 ### How to use:
 

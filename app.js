@@ -24,10 +24,12 @@ if(typeof AudioContext!='undefined'){
   function keyRelease(e){
     console.log('release');
     var freq = parseFloat(e.target.dataset.frequency);
-    if(currentFreq==freq){
-      gain.disconnect(ctx.destination);
-      currentFreq = null;
-    }
+    setTimeout(function(){
+      if(currentFreq==freq){
+        gain.disconnect(ctx.destination);
+        currentFreq = null;
+      }
+    },700);
   }
   var reeds = document.querySelectorAll('.reed');
   for(i=0;i<reeds.length;i++){

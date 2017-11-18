@@ -48,3 +48,10 @@ if(typeof AudioContext !== 'undefined') {
 else {
   alert("Please use a real browser");
 }
+
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
+} else {
+  window.location.replace('http://abetterbrowser.org/');
+}

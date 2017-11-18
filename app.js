@@ -51,7 +51,7 @@ else {
 
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js');
+  navigator.serviceWorker.register('service-worker.js');
 } else {
   window.location.replace('http://abetterbrowser.org/');
 }
